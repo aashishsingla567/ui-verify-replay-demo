@@ -465,12 +465,13 @@ function showDocument(autoPlay=true){player?.$destroy();player=null;screen.repla
 function rawLabel(){return recording.source==='manual'?'Manual session':recording.caseId||'Automated session';}
 function failed(error){status.textContent='Cannot load replay: '+error.message;document.querySelector('#openFile').open=true;}
 file.onchange=async()=>{if(!file.files[0])return;status.textContent='Loading…';try{await loadRecording(file.files[0]);}catch(error){failed(error);}};select.onchange=()=>showDocument();
-const encoded=new URLSearchParams(location.hash.slice(1)).get('replay');
+function loadFromLink(){const encoded=new URLSearchParams(location.hash.slice(1)).get('replay');
 if(encoded){
   // Clear the payload from the address bar before any optional navigation.
   history.replaceState(null,'',location.pathname+location.search);
   try{if(encoded.length>7400||!/^[A-Za-z0-9_-]+$/.test(encoded))throw Error('Invalid replay link');const bytes=Uint8Array.from(atob(encoded.replace(/-/g,'+').replace(/_/g,'/')),c=>c.charCodeAt(0));loadRecording(new File([bytes],'replay.json.gz'),true).catch(failed);}catch(error){failed(error);}
-}
+}}
+window.addEventListener('hashchange',loadFromLink);loadFromLink();
 let lastWidth=0;new ResizeObserver(()=>{const width=Math.max(280,screen.clientWidth);if(player&&width!==lastWidth){lastWidth=width;player.$set({width,height:Math.round(width*0.625)});player.triggerResize();}}).observe(screen);
 window.uiVerifyFilePlayer={get recording(){return recording;},get player(){return player;}};
 </script></html>
