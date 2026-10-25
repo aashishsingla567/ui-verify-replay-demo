@@ -3,9 +3,185 @@
 <title>Session replay player</title><style>.switch.svelte-a6h7w7.svelte-a6h7w7.svelte-a6h7w7{height:1em;display:flex;align-items:center}.switch.disabled.svelte-a6h7w7.svelte-a6h7w7.svelte-a6h7w7{opacity:.5}.label.svelte-a6h7w7.svelte-a6h7w7.svelte-a6h7w7{margin:0 8px}.switch.svelte-a6h7w7 input[type=checkbox].svelte-a6h7w7.svelte-a6h7w7{position:absolute;opacity:0}.switch.svelte-a6h7w7 label.svelte-a6h7w7.svelte-a6h7w7{width:2em;height:1em;position:relative;cursor:pointer;display:block}.switch.disabled.svelte-a6h7w7 label.svelte-a6h7w7.svelte-a6h7w7{cursor:not-allowed}.switch.svelte-a6h7w7 label.svelte-a6h7w7.svelte-a6h7w7:before{content:"";position:absolute;width:2em;height:1em;left:.1em;transition:background .1s ease;background:#4950f680;border-radius:50px}.switch.svelte-a6h7w7 label.svelte-a6h7w7.svelte-a6h7w7:after{content:"";position:absolute;width:1em;height:1em;border-radius:50px;left:0;transition:all .2s ease;box-shadow:0 2px 5px #0000004d;background:#fcfff4;animation:switch-off .2s ease-out;z-index:2}.switch.svelte-a6h7w7 input[type=checkbox].svelte-a6h7w7:checked+label.svelte-a6h7w7:before{background:#4950f6}.switch.svelte-a6h7w7 input[type=checkbox].svelte-a6h7w7:checked+label.svelte-a6h7w7:after{animation:switch-on .2s ease-out;left:1.1em}.rr-custom-event-container.svelte-1tmkyxu.svelte-1tmkyxu{position:absolute;top:2px;transform:translate(-50%,-50%);width:20px;height:24px;z-index:1}.rr-custom-event.svelte-1tmkyxu.svelte-1tmkyxu{width:100%;height:100%;padding:0;border:0;background:transparent;cursor:pointer;font:inherit}.rr-custom-event-container.svelte-1tmkyxu.svelte-1tmkyxu:hover,.rr-custom-event-container.svelte-1tmkyxu.svelte-1tmkyxu:focus-within{z-index:2}.rr-custom-event.svelte-1tmkyxu.svelte-1tmkyxu:focus-visible{outline:2px solid rgb(73,80,246);outline-offset:2px;border-radius:3px}.rr-custom-event.svelte-1tmkyxu.svelte-1tmkyxu:disabled{cursor:not-allowed}.rr-custom-event__tick.svelte-1tmkyxu.svelte-1tmkyxu{display:block;width:10px;height:5px;margin:auto}.rr-custom-event__timeline-marker-panel.svelte-1tmkyxu.svelte-1tmkyxu{display:none;position:absolute;bottom:100%;left:50%;transform:translate(-50%);width:var(--rr-timeline-marker-panel-width, 280px);box-sizing:border-box;padding:12px 14px;background:#242936;color:#fff;border-radius:6px;box-shadow:0 4px 16px #0003;font:14px/1.5 system-ui,sans-serif;text-align:left;white-space:normal;overflow-wrap:anywhere;max-height:var(--rr-timeline-marker-panel-height, 240px);overflow-y:auto}.rr-custom-event__timeline-marker-panel.svelte-1tmkyxu strong.svelte-1tmkyxu,.rr-custom-event__timeline-marker-panel.svelte-1tmkyxu span.svelte-1tmkyxu{display:block;white-space:pre-wrap}.rr-custom-event__timeline-marker-panel.svelte-1tmkyxu strong.svelte-1tmkyxu{margin-bottom:4px}.rr-custom-event__timeline-marker-panel.left.svelte-1tmkyxu.svelte-1tmkyxu{left:0;transform:none}.rr-custom-event__timeline-marker-panel.right.svelte-1tmkyxu.svelte-1tmkyxu{left:auto;right:0;transform:none}.rr-custom-event-container.svelte-1tmkyxu:hover .rr-custom-event__timeline-marker-panel.svelte-1tmkyxu,.rr-custom-event-container.svelte-1tmkyxu:focus-within .rr-custom-event__timeline-marker-panel.svelte-1tmkyxu{display:block}.rr-controller.svelte-1difoxs.svelte-1difoxs{width:100%;height:80px;background:#fff;display:flex;flex-direction:column;justify-content:space-around;align-items:center;border-radius:0 0 5px 5px}.rr-timeline.svelte-1difoxs.svelte-1difoxs{width:80%;display:flex;align-items:center}.rr-timeline__time.svelte-1difoxs.svelte-1difoxs{display:inline-block;width:100px;text-align:center;color:#11103e}.rr-progress.svelte-1difoxs.svelte-1difoxs{flex:1;height:12px;background:#eee;position:relative;border-radius:3px;cursor:pointer;box-sizing:border-box;border-top:solid 4px #fff;border-bottom:solid 4px #fff}.rr-progress__slider.svelte-1difoxs.svelte-1difoxs{position:absolute;inset:-4px 0;pointer-events:none;border-radius:3px}.rr-progress__slider.svelte-1difoxs.svelte-1difoxs:focus-visible{outline:2px solid rgb(73,80,246);outline-offset:2px}.rr-progress.disabled.svelte-1difoxs.svelte-1difoxs{cursor:not-allowed}.rr-progress__step.svelte-1difoxs.svelte-1difoxs{height:100%;position:absolute;left:0;top:0;background:#e0e1fe}.rr-progress__handler.svelte-1difoxs.svelte-1difoxs{width:20px;height:20px;border-radius:10px;position:absolute;top:2px;transform:translate(-50%,-50%);background:#4950f6}.rr-controller__btns.svelte-1difoxs.svelte-1difoxs{display:flex;align-items:center;justify-content:center;font-size:13px}.rr-controller__btns.svelte-1difoxs button.svelte-1difoxs{width:32px;height:32px;display:flex;padding:0;align-items:center;justify-content:center;background:none;border:none;border-radius:50%;cursor:pointer}.rr-controller__btns.svelte-1difoxs button.svelte-1difoxs:active{background:#e0e1fe}.rr-controller__btns.svelte-1difoxs button.active.svelte-1difoxs{color:#fff;background:#4950f6}.rr-controller__btns.svelte-1difoxs button.svelte-1difoxs:disabled{cursor:not-allowed}.replayer-wrapper{position:relative}.replayer-mouse{position:absolute;width:20px;height:20px;transition:left .05s linear,top .05s linear;background-size:contain;background-position:center center;background-repeat:no-repeat;background-image:url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9JzMwMHB4JyB3aWR0aD0nMzAwcHgnICBmaWxsPSIjMDAwMDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGRhdGEtbmFtZT0iTGF5ZXIgMSIgdmlld0JveD0iMCAwIDUwIDUwIiB4PSIwcHgiIHk9IjBweCI+PHRpdGxlPkRlc2lnbl90bnA8L3RpdGxlPjxwYXRoIGQ9Ik00OC43MSw0Mi45MUwzNC4wOCwyOC4yOSw0NC4zMywxOEExLDEsMCwwLDAsNDQsMTYuMzlMMi4zNSwxLjA2QTEsMSwwLDAsMCwxLjA2LDIuMzVMMTYuMzksNDRhMSwxLDAsMCwwLDEuNjUuMzZMMjguMjksMzQuMDgsNDIuOTEsNDguNzFhMSwxLDAsMCwwLDEuNDEsMGw0LjM4LTQuMzhBMSwxLDAsMCwwLDQ4LjcxLDQyLjkxWm0tNS4wOSwzLjY3TDI5LDMyYTEsMSwwLDAsMC0xLjQxLDBsLTkuODUsOS44NUwzLjY5LDMuNjlsMzguMTIsMTRMMzIsMjcuNThBMSwxLDAsMCwwLDMyLDI5TDQ2LjU5LDQzLjYyWiI+PC9wYXRoPjwvc3ZnPg==);border-color:transparent}.replayer-mouse:after{content:"";display:inline-block;width:20px;height:20px;background:#4950f6;border-radius:100%;transform:translate(-50%,-50%);opacity:.3}.replayer-mouse.active:after{animation:click .2s ease-in-out 1}.replayer-mouse.touch-device{background-image:none;width:70px;height:70px;border-width:4px;border-style:solid;border-radius:100%;margin-left:-37px;margin-top:-37px;border-color:#4950f600;transition:left 0s linear,top 0s linear,border-color .2s ease-in-out}.replayer-mouse.touch-device.touch-active{border-color:#4950f6;transition:left .25s linear,top .25s linear,border-color .2s ease-in-out}.replayer-mouse.touch-device:after{opacity:0}.replayer-mouse.touch-device.active:after{animation:touch-click .2s ease-in-out 1}.replayer-mouse-tail{position:absolute;pointer-events:none}@keyframes click{0%{opacity:.3;width:20px;height:20px}50%{opacity:.5;width:10px;height:10px}}@keyframes touch-click{0%{opacity:0;width:20px;height:20px}50%{opacity:.5;width:10px;height:10px}}.rr-player{position:relative;background:#fff;float:left;border-radius:5px;box-shadow:0 24px 48px #11103e1f}.rr-player__viewport{position:relative}.rr-player__caption{bottom:24px;position:absolute;left:8%;right:8%;margin:0 auto;width:fit-content;max-width:84%;max-height:45%;overflow-y:auto;box-sizing:border-box;padding:10px 16px;border-radius:6px;background:#181d28f0;color:#fff;font:16px/1.5 system-ui,sans-serif;text-align:center;white-space:pre-wrap;overflow-wrap:anywhere}.rr-player__frame{overflow:hidden}.replayer-wrapper{float:left;clear:both;transform-origin:top left;left:50%;top:50%}.replayer-wrapper>iframe{border:none}
 /*# sourceMappingURL=style.min.css.map */
 
-body{font:14px system-ui;max-width:1280px;margin:0 auto;padding:16px;color:#152034;background:#f6f7f9;box-sizing:border-box}header{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}h1{font-size:18px;margin:0}button,select,input{font:inherit}select,#restart{max-width:100%;padding:6px;border:1px solid #cdd4df;border-radius:6px;background:white}#restart{cursor:pointer}#playbackTools{margin-bottom:12px}#playback{margin-left:12px;font-variant-numeric:tabular-nums}#screen{overflow:hidden;border-radius:8px;background:white}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px}#status{display:block;margin:8px 0 12px;color:#596579}details{margin-top:12px}summary{cursor:pointer;color:#596579}footer{margin-top:12px;color:#687485;font-size:12px}.rr-player{box-shadow:none}.rr-controller__btns button{font-size:12px}input{max-width:100%}</style>
-<header><h1>Session replay</h1><label>Page <select id="documents" disabled></select></label></header><output id="status" role="status">Open a recording below, or follow a replay link from the PR.</output>
-<div id="playbackTools" hidden><button id="restart">Replay from start</button><span id="playback"></span></div><div id="screen"></div><details id="openFile" open><summary>Open a recording</summary><p>Select a <code>.json.gz</code> or <code>.json</code> from the PR artifact.</p><label>Recording <input id="file" type="file" accept=".json,.gz"></label></details><details><summary>Events for coding agents</summary><pre id="evidence"></pre></details><footer>rrweb-player 2.2.0 · Playback stays in your browser · External assets may be missing</footer>
+*{box-sizing:border-box}
+body{font:14px/1.45 "Segoe UI","Helvetica Neue",Arial,sans-serif;
+  max-width:1280px;
+  margin:0 auto;
+  padding:24px;
+  color:#26334a;
+  background:#eef1f6}
+header{display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  margin-bottom:6px}
+h1{font-size:19px;
+  font-weight:650;
+  letter-spacing:-.4px;
+  margin:0}
+.page-nav{display:flex;
+  align-items:center;
+  gap:8px}
+.page-nav label{font-size:12px;
+  color:#65738a}
+.page-nav select{max-width:260px}
+button,select,input{font:inherit}
+button,select{border:1px solid #d8dfeb;
+  background:#fff;
+  color:inherit;
+  border-radius:6px}
+button{cursor:pointer}
+button:disabled{opacity:.4;
+  cursor:default}
+button:focus-visible,select:focus-visible,summary:focus-visible,input:focus-visible{outline:3px solid #aaa3ef;
+  outline-offset:3px}
+select{padding:6px 28px 6px 9px;
+  max-width:100%}
+.page-step{width:30px;
+  height:32px;
+  font-size:18px}
+#status{display:block;
+  min-height:20px;
+  margin:0 0 14px;
+  color:#65738a;
+  font-size:12px}
+.player-frame{overflow:hidden;
+  border:1px solid #d8dfeb;
+  border-radius:10px;
+  background:#fff}
+#screen:empty{display:none}
+#screen{overflow:hidden;
+  background:#fff}
+#screen .rr-player{box-shadow:none;
+  border-radius:0;
+  background:#fff}
+#screen .rr-controller{background:#fff;
+  color:#26334a;
+  border-top:1px solid #e6eaf2;
+  padding:10px 16px!important}
+#screen .rr-controller .rr-timeline{width:100%;
+  margin:0!important}
+#screen .rr-controller .rr-timeline__time{display:none}
+#screen .rr-controller .rr-progress{background:#e7eaf2;
+  border-top-color:#fff;
+  border-bottom-color:#fff}
+#screen .rr-controller .rr-progress__step{background:#544ac5}
+#screen .rr-controller .rr-progress__handler{background:#544ac5;
+  width:12px;
+  height:12px;
+  top:2px;
+  border:2px solid #fff;
+  box-shadow:0 0 0 1px #544ac5}
+#screen .rr-controller .rr-controller__btns{justify-content:flex-start;
+  width:100%;
+  gap:4px;
+  padding-top:6px}
+#screen .rr-controller .rr-controller__btns button{width:auto;
+  min-width:40px;
+  height:28px;
+  border-radius:5px;
+  padding:0 7px;
+  font-size:12px;
+  color:#65738a}
+#screen .rr-controller .rr-controller__btns button:first-child{margin-right:8px;
+  color:#26334a}
+#screen .rr-controller .rr-controller__btns button:last-child{margin-left:auto;
+  color:#65738a}
+#screen .rr-controller .rr-controller__btns button.active{background:#eeecff;
+  color:#493eaf;
+  box-shadow:inset 0 0 0 1px #ddd8ff}
+#screen .rr-controller .switch{display:none}
+#screen .rr-player:fullscreen .rr-timeline__time{display:inline}
+#playbackTools{align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  border-top:1px solid #edf0f6;
+  padding:9px 16px}
+#playbackTools:not([hidden]){display:flex}
+#restart{border:0;
+  background:none;
+  padding:3px 0;
+  color:#544ac5;
+  font-size:12px;
+  font-weight:600}
+#playback{font-size:12px;
+  color:#65738a;
+  font-variant-numeric:tabular-nums}
+#empty{padding:54px 24px;
+  text-align:center}
+#empty svg{width:40px;
+  height:40px;
+  color:#544ac5;
+  margin-bottom:10px}
+#empty h2{font-size:18px;
+  letter-spacing:-.3px;
+  margin:0 0 8px}
+#empty p{color:#65738a;
+  max-width:46ch;
+  margin:0 auto}
+.support{display:flex;
+  gap:12px 28px;
+  flex-wrap:wrap;
+  margin-top:16px}
+.support details{min-width:0;
+  flex:1 1 260px}
+summary{cursor:pointer;
+  color:#65738a;
+  font-size:12px;
+  list-style-position:inside}
+details[open] summary{margin-bottom:12px}
+details p{color:#65738a;
+  font-size:12px;
+  max-width:70ch}
+input{max-width:100%;
+  font-size:12px}
+input::file-selector-button{background:#544ac5;
+  color:white;
+  border:0;
+  border-radius:5px;
+  padding:8px 12px;
+  margin-right:12px;
+  cursor:pointer}
+pre{max-height:360px;
+  overflow:auto;
+  white-space:pre-wrap;
+  overflow-wrap:anywhere;
+  font-size:12px;
+  line-height:1.6;
+  background:#fff;
+  border:1px solid #d8dfeb;
+  border-radius:6px;
+  padding:12px}
+footer{margin-top:20px;
+  font-size:11px;
+  color:#65738a}
+footer a{color:inherit}
+@media(max-width:600px){body{padding:12px}
+header{align-items:flex-start;
+  flex-wrap:wrap;
+  gap:10px}
+h1{font-size:17px}
+.page-nav{margin-left:auto;
+  max-width:100%}
+.page-nav select{max-width:190px}
+#screen .rr-controller{padding-left:10px!important;
+  padding-right:10px!important}
+#screen .rr-controller .rr-controller__btns{gap:1px}
+#screen .rr-controller .rr-controller__btns button{min-width:36px;
+  padding:0 5px}
+#playbackTools{padding:9px 12px}
+#empty{padding:36px 20px}
+.support{gap:12px;
+  margin-top:12px}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;
+  transition:none!important}
+}
+
+</style>
+<header><h1>Session replay</h1><nav class="page-nav" aria-label="Recorded pages"><label for="documents">Page</label><select id="documents" disabled></select><button id="previous" class="page-step" aria-label="Previous page" disabled>‹</button><button id="next" class="page-step" aria-label="Next page" disabled>›</button></nav></header><output id="status" role="status">Ready to open a recording</output>
+<div class="player-frame"><div id="empty"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><rect x="3" y="5" width="34" height="30" rx="6" stroke="currentColor" stroke-width="1.5"/><path d="m17 14 10 6-10 6V14Z" fill="currentColor"/></svg><h2>Open a session replay</h2><p>Choose a recording from a PR artifact, or follow its play link to start watching.</p></div><div id="screen"></div><div id="playbackTools" hidden><button id="restart">Replay from start</button><span id="playback"></span></div></div>
+<div class="support"><details id="openFile" open><summary>Open a recording</summary><p>Select the <code>.json.gz</code> or <code>.json</code> file from the PR artifact.</p><label>Recording <input id="file" type="file" accept=".json,.gz"></label><p>Files play locally. Replay links contain their recording; anyone with the full link can view it.</p></details><details><summary>Events for coding agents</summary><pre id="evidence"></pre></details></div><footer>Local playback with rrweb 2.2.0. Some external page assets may be missing.</footer>
 <!-- Third-party notices for bundled rrweb recorder/replayer assets.
 
 rrweb, rrweb-player, rrweb-snapshot, rrdom, @rrweb/types, @rrweb/utils, @rrweb/replay and @rrweb/packer (MIT)
@@ -439,7 +615,7 @@ return module.exports;
 <script>
 const file=document.querySelector('#file'),select=document.querySelector('#documents'),status=document.querySelector('#status'),screen=document.querySelector('#screen'),evidence=document.querySelector('#evidence'),playback=document.querySelector('#playback'),playbackTools=document.querySelector('#playbackTools');let recording,player;
 async function loadRecording(file,autoPlay=false){
-  player?.$destroy();player=null;recording=null;screen.replaceChildren();select.replaceChildren();select.disabled=true;evidence.textContent='';playbackTools.hidden=true;
+  player?.$destroy();player=null;recording=null;screen.replaceChildren();select.replaceChildren();select.disabled=true;evidence.textContent='';playbackTools.hidden=true;document.querySelector('#empty').hidden=false;document.querySelector('#previous').disabled=true;document.querySelector('#next').disabled=true;
   if(file.size>15000000)throw Error('Recording exceeds 15MB');
   const bytes=new Uint8Array(await file.arrayBuffer());
   let stream=new Blob([bytes]).stream();if(bytes[0]===31&&bytes[1]===139)stream=stream.pipeThrough(new DecompressionStream('gzip'));
@@ -453,12 +629,12 @@ async function loadRecording(file,autoPlay=false){
     const option=document.createElement('option');option.value=i;let pathname;try{pathname=new URL(doc.url).pathname;}catch{pathname='';}option.textContent=(i+1)+' / '+raw.documents.length+' · '+pathname;select.append(option);
     for(const event of doc.events)if(event.type===5&&event.data?.tag==='ui-verify'){const line='[document-'+(i+1)+'] '+JSON.stringify(event.data.payload)+'\n';if(text.length+line.length<32000)text+=line;}
   }
-  evidence.textContent=text;select.disabled=false;document.querySelector('#openFile').open=false;showDocument(autoPlay);
+  evidence.textContent=text;select.disabled=false;document.querySelector('#empty').hidden=true;document.querySelector('#openFile').open=false;document.querySelector('#openFile summary').textContent='Open another recording';showDocument(autoPlay);
 }
-function showDocument(autoPlay=true){player?.$destroy();player=null;screen.replaceChildren();const doc=recording.documents[Number(select.value)||0];
+function showDocument(autoPlay=true){player?.$destroy();player=null;screen.replaceChildren();playbackTools.hidden=true;const index=Number(select.value)||0,doc=recording.documents[index];document.querySelector('#previous').disabled=index===0;document.querySelector('#next').disabled=index===recording.documents.length-1;
   if(!doc.events.some(e=>e.type===2)){status.textContent='Full DOM snapshot missing';return;}
   const Player=rrwebPlayer.default||rrwebPlayer;
-  const width=Math.max(280,screen.clientWidth),height=Math.round(width*0.625);
+  const {width,height}=playerSize();
   player=new Player({target:screen,props:{events:doc.events,autoPlay,width,height,skipInactive:false,speed:1,speedOption:[0.25,0.5,1,2],showWarning:false,showDebug:false,mouseTail:false}});
   // Upstream initializes its controller from speedOption[0], independently of
   // the replayer's speed prop. Keep the highlighted button and actual speed aligned.
@@ -475,11 +651,12 @@ function showDocument(autoPlay=true){player?.$destroy();player=null;screen.repla
   player.addEventListener('ui-update-player-state',event=>{state=event.payload==='playing'?'Playing':current>=total?'Finished':'Paused';update();ensureFrame();});
   player.getReplayer().on('finish',()=>{state='Finished';current=total;update();});
   playbackTools.hidden=false;update();
-  status.textContent=(rawLabel())+' · '+recording.documents.length+' documents · '+(player.getMetaData().totalTime/1000).toFixed(1)+'s'+(recording.truncated||doc.truncated?' · Partial recording':'');
+  status.textContent=(rawLabel())+' / '+recording.documents.length+(recording.documents.length===1?' document':' documents')+(recording.truncated||doc.truncated?' / Partial recording':'');
 }
 function rawLabel(){return recording.source==='manual'?'Manual session':recording.caseId||'Automated session';}
 function failed(error){status.textContent='Cannot load replay: '+error.message;document.querySelector('#openFile').open=true;}
 document.querySelector('#restart').onclick=()=>player?.goto(0,true);
+for(const [id,step]of [['previous',-1],['next',1]])document.querySelector('#'+id).onclick=()=>{const index=Number(select.value)+step;if(recording&&index>=0&&index<recording.documents.length){select.value=index;showDocument();}};
 file.onchange=async()=>{if(!file.files[0])return;history.replaceState(null,'',location.pathname+location.search);status.textContent='Loading…';try{await loadRecording(file.files[0]);}catch(error){failed(error);}};select.onchange=()=>showDocument();
 function loadFromLink(){const encoded=new URLSearchParams(location.hash.slice(1)).get('replay');
 if(encoded){
@@ -488,6 +665,8 @@ if(encoded){
   try{if(encoded.length>7400||!/^[A-Za-z0-9_-]+$/.test(encoded))throw Error('Invalid replay link');const bytes=Uint8Array.from(atob(encoded.replace(/-/g,'+').replace(/_/g,'/')),c=>c.charCodeAt(0));loadRecording(new File([bytes],'replay.json.gz'),true).catch(failed);}catch(error){failed(error);}
 }}
 window.addEventListener('hashchange',loadFromLink);loadFromLink();
-let lastWidth=0;new ResizeObserver(()=>{const width=Math.max(280,screen.clientWidth);if(player&&width!==lastWidth){lastWidth=width;player.$set({width,height:Math.round(width*0.625)});player.triggerResize();}}).observe(screen);
+function playerSize(){const width=Math.max(280,screen.clientWidth);return{width,height:Math.round(Math.min(width*0.625,Math.max(180,innerHeight-260)))};}
+let lastSize='';function resizePlayer(){const size=playerSize(),key=size.width+':'+size.height;if(player&&key!==lastSize){lastSize=key;player.$set(size);player.triggerResize();}}
+new ResizeObserver(resizePlayer).observe(screen);window.addEventListener('resize',resizePlayer);
 window.uiVerifyFilePlayer={get recording(){return recording;},get player(){return player;}};
 </script></html>
